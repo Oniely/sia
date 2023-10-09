@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f7f7f7;
+}
+
+.main_login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/wall.jpeg") no-repeat center center/cover;
+}
+
+.login_container {
+  max-width: 500px;
+  height: 600px;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 65px;
+  padding: 30px 0 35px 0;
+  border: 1px solid #101010;
+  box-shadow: 0 0 8px 1px rgba(16, 16, 16, 0.2);
+}
+.login_container .img_container {
+  width: 330px;
+  height: 100px;
+}
+.login_container .img_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.login_container form {
+  width: 330px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 33px;
+}
+.login_container form .input_div {
+  width: 330px;
+  height: 45px;
+  position: relative;
+}
+.login_container form .input_div:nth-child(2) {
+  text-align: end;
+}
+.login_container form .input_div:nth-child(3) {
+  text-align: center;
+}
+.login_container form .input_div input {
+  width: 100%;
+  height: 100%;
+  color: #101010;
+  outline: 0;
+  border: 1px solid #101010;
+}
+.login_container form .input_div input[type=text] {
+  font-size: 0.95rem;
+  padding: 8px 12px;
+}
+.login_container form .input_div input[type=submit] {
+  background: #101010;
+  color: #f7f7f7;
+  font-size: 1.1rem;
+}
+.login_container form .input_div span, .login_container form .input_div a {
+  font-size: calc(0.95rem - 2px);
+  line-height: 1.9rem;
+}
+.login_container .btn_links {
+  width: 330px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.login_container .btn_links button {
+  width: 100%;
+  height: 45px;
+  background: #f7f7f7;
+  outline: 0;
+  border: 1px solid #101010;
+  font-size: 0.95rem;
+}/*# sourceMappingURL=login.css.map */
