@@ -1,6 +1,6 @@
 <?php
 
-$stylePath = "styles/login.css";
+$stylePath = "styles/login_system/login.css";
 
 ?>
 
@@ -8,25 +8,25 @@ $stylePath = "styles/login.css";
 
 <main class="main_login">
 
-    <div class="login_container container-md">
+    <div class="login_container container">
 
         <div class="img_container">
-            <img class="img-fluid" src="images/logo-black.png" alt="image">
+            <img src="images/logo-black.png" alt="image">
         </div>
 
-        <form action="#" method="POST">
+        <form method="POST">
             <div class="input_div">
-                <input type="text" placeholder="Username" id="login_username" required>
+                <input type="text" placeholder="Username" name="login_username" id="login_username" required>
             </div>
 
             <div class="input_div">
-                <input type="text" placeholder="Password" id="password" minlength="8" required>
+                <input type="password" placeholder="Password" name="password" id="password" required>
                 <a href="#">forgot password?</a>
             </div>
 
             <div class="input_div">
                 <input type="submit" value="Log in" id="submit" />
-                <span>Don't have an account yet? <a href="#">Sign Up</a></span>
+                <span>Don't have an account yet? <a href="/sia/sign_up">Sign Up</a></span>
             </div>
         </form>
 
@@ -35,6 +35,8 @@ $stylePath = "styles/login.css";
             <button>Sign in with Google</button>
         </div>
     </div>
+
+    <?php require 'includes/login_system/login.inc.php' ?>
 
 </main>
 

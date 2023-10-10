@@ -1,21 +1,59 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  line-height: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+header,
+section {
+  padding: 4rem 0;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background: #f7f7f7;
 }
 
 .main_login {
-  width: 100%;
+  max-width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/wall.jpeg") no-repeat center center/cover;
+  flex-direction: column;
+  background: url("../../images/wall.jpeg") no-repeat center center/cover;
 }
 
 .login_container {
   max-width: 500px;
-  height: 600px;
+  min-height: 600px;
   background: #f7f7f7;
   display: flex;
   flex-direction: column;
@@ -37,7 +75,7 @@ body {
      object-fit: cover;
 }
 .login_container form {
-  width: 330px;
+  max-width: 330px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -57,12 +95,13 @@ body {
 }
 .login_container form .input_div input {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   color: #101010;
   outline: 0;
   border: 1px solid #101010;
 }
-.login_container form .input_div input[type=text] {
+.login_container form .input_div input[type=text],
+.login_container form .input_div input[type=password] {
   font-size: 0.95rem;
   padding: 8px 12px;
 }
@@ -71,9 +110,14 @@ body {
   color: #f7f7f7;
   font-size: 1.1rem;
 }
-.login_container form .input_div span, .login_container form .input_div a {
+.login_container form .input_div span,
+.login_container form .input_div a {
+  text-decoration: none;
   font-size: calc(0.95rem - 2px);
   line-height: 1.9rem;
+}
+.login_container form .input_div a {
+  color: blue;
 }
 .login_container .btn_links {
   width: 330px;
